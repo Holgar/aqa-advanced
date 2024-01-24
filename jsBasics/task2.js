@@ -1,4 +1,5 @@
-let firstName = 'Joe';
-let lastName = 'Doe';
-let fullName = `${firstName} ${lastName}`;
-console.log(fullName);
+const firstName = 'Joe';
+const lastName = 'Doe';
+
+console.log(firstName + ' ' + lastName);
+console.log(`${firstName} ${lastName}`);

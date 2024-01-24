@@ -1,7 +1,7 @@
 const firstName = 'Michael';
-let age = 34;
-let isMarried = false;
-let hasCar = null;
+const age = 34;
+const isMarried = false;
+const hasCar = null;
 let hasExperience;
 
 console.log (`Name: ${firstName}`);
