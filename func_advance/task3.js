@@ -1,11 +1,11 @@
 const divide = (numerator, denominator) => {
     if (denominator === 0) {
         throw new Error("Error: Division by zero is undefined.");
-    } else if (typeof numerator !== 'number' || typeof denominator !== 'number'){
-        throw new Error("Both numerator and denominator must be numbers.");
-    } else {
-        return numerator / denominator;
     }
+    if (typeof numerator !== 'number' || typeof denominator !== 'number') {
+        throw new Error("Both numerator and denominator must be numbers.");
+    }
+    return numerator / denominator;
 }
 
 try {
