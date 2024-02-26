@@ -1,3 +1,4 @@
+
 const BASE_URL = 'https://jsonplaceholder.typicode.com';
 
 const fetchTodo = async () => {
@@ -8,6 +9,7 @@ const fetchTodo = async () => {
   } catch (e) {
     console.log(e);
     return null;
+
   }
 };
 
