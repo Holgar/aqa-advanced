@@ -1,6 +1,6 @@
-import { fetchUser } from "./helpers.js";
+import fetchUser from './helpers.js';
 
-export class Users {
+export default class Users {
   static async getUser() {
     return fetchUser();
   }

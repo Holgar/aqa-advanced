@@ -1,6 +1,6 @@
-import { fetchTodo } from "./helpers.js";
+import fetchTodo from './helpers.js';
 
-export class Todo {
+export default class Todo {
   static async getTodo() {
     return fetchTodo();
   }

@@ -1,6 +1,5 @@
-export { BASE_URL,fetchTodo,fetchUser } 
 
-const BASE_URL = "https://jsonplaceholder.typicode.com";
+const BASE_URL = 'https://jsonplaceholder.typicode.com';
 
 const fetchTodo = async () => {
   try {
@@ -9,6 +8,8 @@ const fetchTodo = async () => {
     return data;
   } catch (e) {
     console.log(e);
+    return null;
+
   }
 };
 
@@ -19,6 +20,8 @@ const fetchUser = async () => {
     return data;
   } catch (e) {
     console.log(e);
+    return null;
   }
 };
 
+export { BASE_URL, fetchTodo, fetchUser };

@@ -8,4 +8,4 @@ const timer = (message, ms) => {
 //     setTimeout(() => console.log(This ${arg} is shown after ${ms} milliseconds), ms);
 // }
 
-timer("test message", 1000);
+timer('test message', 1000);

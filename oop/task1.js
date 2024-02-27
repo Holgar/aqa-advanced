@@ -1,5 +1,5 @@
-import { Book }  from "./Book.js";
-import { Ebook } from "./EBook.js";
+import Book from './Book.js';
+import Ebook from './EBook.js';
 
 const books = [];
 
@@ -10,7 +10,3 @@ const eBook2 = new Ebook('Atlas Shrugged', 'Ayn Rand', 1957, 'FB2');
 const convertedEbook = Ebook.createEbookFromBook(book1, 'EPUB');
 
 books.push(book1, book2, eBook1, eBook2, convertedEbook);
-books.forEach(book => book.printInfo());
-
-const oldestBook = Book.findOldestBook(books.slice(0, -1));
-console.log(`The oldest book: ${oldestBook.title} (${oldestBook.publishYear})`);
